@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+	<title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+</head>
+
+<body background="wolfy wolf wolf.jpg">
+
+    <center>
+
+        <h3 class="btn btn-primary heading">Hand Gestures
+
+            <br>
+
+            <span class="emoji">&#9994;</span>
+
+            <span class="emoji">&#9996;</span>
+
+            <span class="emoji">&#9995;</span>
+
+            <span class="emoji">&#129304;</span>
+            
+            <span class="emoji">&#128076;</span>
+
+        </h3>
+
+        <div id="webcam"></div>
+
+        <button class="btn btn-danger" id="capture" onclick="capture()">CAPTURE</button>
+
+        <br>
+
+        <span id="gesture_name"></span>
+
+        <br>
+
+        <span id="gesture_img"></span>
+
+        <br>
+
+        <div id="captured_img"></div>
+
+        <br>
+
+        <button class="btn btn-info" id="indentify" onclick="identify()">IDENTIFY</button>
+
+    </center>
+
+</body>
+
+</html>
